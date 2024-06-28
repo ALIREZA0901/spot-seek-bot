@@ -1,11 +1,11 @@
 import os
 
 # bot name
-bot_name = "Spot Seek Bot"
-bot_username = "@SpotSeekBot"
+bot_name = "Spotify downloader"
+bot_username = "@Sptify_dlbot"
 
 # message for /start command
-welcome_message = '''Welcome to @SpotSeekBot
+welcome_message = '''Welcome to @Sptify_dlbot
 
 Send me a link from spotify and I'll download it for you.
 
@@ -22,19 +22,7 @@ https://open.spotify.com/playlist/37i9dQZF1DWX4UlFW6EJPs
 NOTE: The fewer tracks your link has, the faster it will download.
 
 
-©️ Creator: @Arashnm80_Channel'''
-
-# message for /info command
-info_message = '''This bot's whole open source is available in my github and all interested programmers are welcome to contribute and improve it.
-
-Developer's telegram channel:
-[https://t.me/Arashnm80_Channel](https://t.me/Arashnm80_Channel)
-
-Note: Albums are downloaded faster than playlists and tracks are downloaded faster than albums.
-
-You can support and motivate me to buy more servers for faster download by:
-• Giving a star in [github](https://github.com/arashnm80/spot-seek-bot)⭐🙂
-• Or subscribing to [my youtube](https://www.youtube.com/@Arashnm80)🔥❤️'''
+©️ Creator: @MeneTeam'''
 
 # errors and wrong link patterns from user
 deezer_link_message = '''This bot is created to download from spotify but you sent a deezer link.
@@ -50,25 +38,11 @@ Send the link of your track/album/playlist from spotify'''
 spotify_user_link_message = '''You can't send user links.
 Send the link of your track/album/playlist from spotify'''
 
-# end_message = '''end.
-
-# motivate me to buy more servers for faster download by:
-# • Giving a star in [github](https://github.com/arashnm80/spot-seek-bot)⭐🙂
-# • Or subscribing to [my youtube](https://www.youtube.com/@Arashnm80)🔥❤️'''
-
 end_message = '''end.
-
-You can use my *Instagram Downloader* too: @Best\_Instagram\_downloader\_bot
-
-Subscribe to [My YouTube](https://www.youtube.com/@Arashnm80) for more🔥'''
 
 sth_to_download_message = '''You already have some link to download, wait for it to finish.
 
 Sometimes more than 100 users are sending links at the same time so it might take a while for me to download all of them.
-
-But you can motivate me to buy more servers for faster download by:
-• Giving a star in [github](https://github.com/arashnm80/spot-seek-bot)⭐🙂
-• Or subscribing to [my youtube](https://www.youtube.com/@Arashnm80)🔥❤️'''
 
 wrong_link_message = '''This is not a correct spotify link.
 
@@ -91,8 +65,8 @@ users_csv_path = "./csv_files/users.csv"
 received_links_folder_path = "./received_links"
 
 # env variables
-bot_api = os.environ["SPOT_SEEK_BOT_API"]
-database_channel = os.environ["MUSIC_DATABASE_ID"]
+bot_api = os.environ["7212922206:AAF75cp71I39pZVOEB7baKrG4tzWmDjmKR0"]
+database_channel = os.environ["-1002210935238"]
 
 # spotify regex patterns
 spotify_shortened_link_pattern = r'https?:\/\/spotify\.link\/[A-Za-z0-9]+'
@@ -109,20 +83,19 @@ spotify_user_link_pattern = r'https?:\/\/open\.spotify\.com\/(intl-[a-zA-Z]{2}\/
 
 # log chanel
 log_bot_url = "https://api.telegram.org/bot" + bot_api + "/"
-log_channel_id = os.environ['LOG_CHANNEL_ID']
+log_channel_id = os.environ['-1002152804699']
 
 # specify to use warp or not
 warp_mode = True
 
 # promote channel
-promote_channel_username = "@Arashnm80_Channel"
-promote_channel_link = "https://t.me/Arashnm80_Channel"
+promote_channel_link = "https://t.me/MeneTeam"
 not_subscribed_to_channel_message = '''Your link is correct✅.
 Join to get access to database, then send your link again.'''
 
 # spotify
-spotify_client_id = os.environ["SPOTIFY_APP_CLIENT_ID"]
-spotify_client_secret = os.environ["SPOTIFY_APP_CLIENT_SECRET"]
+spotify_client_id = os.environ["08b370af85884f178223aece31f84036"]
+spotify_client_secret = os.environ["44b4634a492145d5b0fea4ab0cdab91b"]
 
 # database csv columns
 db_time_column = 0
